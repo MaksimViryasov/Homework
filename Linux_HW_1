@@ -1,0 +1,53 @@
+1) Посмотреть где я -  pwd
+2) Создать папку – mkdir folder name
+3) Зайти в папку – cd folder name
+4) Создать 3 папки – mkdir d1 d2 d3
+5) Зайти в любую папку – cd d1
+6) Создать 5 файлов (3 txt, 2 json) – touch cats_names.txt dogs_names.txt cows_names.txt names.json games.json
+7) Создать 3 папки – cd d1 
+mkdir –p dir4 dir5 dir6
+8. Вывести список содержимого папки – ls –al d1
+9) + Открыть любой txt файл 
+10) + написать туда что-нибудь, любой текст. cat > cows_names.txt
+11) + сохранить и выйти. – Зажать ctrl + C 
+12) Выйти из папки на уровень выше – cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv d1/cows_names.txt d3/cows_names.txt
+- mv d1/dogs_names.txt d3/dogs_names.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. -  cp d3/cows_names.txt d2/cows_names.txt
+- cp d3/dogs_names.txt d2/dogs_names.txt
+15) Найти файл по имени – find . –name “*.txt”
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. – tail –f cows_names.txt 
+17) вывести несколько первых строк из текстового файла - head --lines=-2 cows_names.txt
+18) вывести несколько последних строк из текстового файла - tail -n 3 cows_names.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. – less cows_names.txt
+20) вывести дату и время – date
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request 
+- curl ‘http://162.55.220.72:5005/terminal-hw-request’
+Result: 
+"Intro": "Hello!! This is your the first response from ser
+ver",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.
+220.72:5005/get_method?name=(set_your_String)&age=(set_your_
+number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+***
+Создать файл с расширением myscript.sh – touch myscript.sh
+Открыть для редактирования – nano myscript.sh
+Написать туда команды из необходимых пунктов:
+cd d1
+mkdir scp_1 scp_2 scp_3
+cd scp_1
+touch cats.txt dogs.txt cows.txt names.json games.json
+mkdir farm1 farm2 farm3
+ls -la
+mv cats.txt dogs.txt farm1
+Сохранить файл(Cntrl+o) Выход из nano (cntrl+x)
