@@ -1,10 +1,12 @@
 1)Создать таблицу employees
-- id. serial,  primary key,
-- employee_name. Varchar(50), not null  -- create table employees(
+
+ create table employees(
 id serial primary key,
 employee_name Varchar(50) not null
 );
-2)Наполнить таблицу employee 70 строками. -- INSERT INTO employees (employee_name)
+
+2)Наполнить таблицу employee 70 строками.  
+INSERT INTO employees (employee_name)
 VALUES
   ('Demetria Ramos'),
   ('Xantha Fields'),
